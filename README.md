@@ -29,7 +29,7 @@ Este projeto é uma aplicação simples de **Gestão de Eventos** em Java, que p
    cd gestao-eventos
    ```
 3. Compilação e execução
-   Compile o projeto com o seguinte comando:
+Compile o projeto com o seguinte comando:
 
    ```bash
    javac -d bin src/*.java
@@ -56,7 +56,7 @@ Estrutura do Projeto
 - Organizador.java: Contém métodos para gerenciar eventos, como cadastrar, excluir, listar, e buscar eventos.
 - EventoCSV.java: Responsável pela importação de eventos a partir de um arquivo CSV.
 - Exemplo de Uso:
-  Ao rodar o programa, você verá um menu com opções para cadastrar, excluir, buscar e listar eventos, bem como importar um arquivo CSV com eventos.
+Ao rodar o programa, você verá um menu com opções para cadastrar, excluir, buscar e listar eventos, bem como importar um arquivo CSV com eventos.
 
 Menu:
 1. Cadastrar evento
@@ -66,6 +66,6 @@ Menu:
 5. Listar eventos
 6. Importar CSV
 0. Sair
-   Escolha uma opção:
+Escolha uma opção:
 ## Contribuindo
 Se você deseja contribuir para o projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias.
