@@ -48,7 +48,7 @@ public class App {
                 case 4:
                     System.out.println("Nome do evento: ");
                     nome = scanner.next();
-                    organizador.buscar(nome);
+                    System.out.println(organizador.buscar(nome));
                     break;
                 case 5:
                     organizador.listar();
