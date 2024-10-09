@@ -32,7 +32,15 @@ public class App {
                     System.out.println("Local do evento: ");
                     String local = scanner.nextLine();
                     System.out.println("Capacidade do evento: ");
-                    int capacidade = scanner.nextInt(); scanner.nextLine();
+                    String capacidadeAux = scanner.next(); scanner.nextLine();
+                    int capacidade = 0;
+                    try{
+                        capacidade = Integer.parseInt(capacidadeAux);
+                    }
+                    catch(NumberFormatException erro) {
+                        System.out.println("Entrada Inválida");
+                        continue;
+                    }
                     organizador.cadastrar(nome, data, local, capacidade);
                     break;
                 case "2":
