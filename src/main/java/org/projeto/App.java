@@ -9,7 +9,7 @@ public class App {
         Organizador organizador = new Organizador();
         EventoCSV e = new EventoCSV();
 
-        int opcao;
+        String opcao;
         String nome;
         do {
             System.out.println("\nMenu:");
@@ -21,10 +21,10 @@ public class App {
             System.out.println("6. Importar CSV");
             System.out.println("0. Sair");
             System.out.print("Escolha uma opção: ");
-            opcao = scanner.nextInt(); scanner.nextLine();
+            opcao = scanner.next(); scanner.nextLine();
 
             switch (opcao) {
-                case 1:
+                case "1":
                     System.out.println("Nome do evento: ");
                     nome = scanner.nextLine();
                     System.out.println("Data do evento: ");
@@ -35,34 +35,34 @@ public class App {
                     int capacidade = scanner.nextInt(); scanner.nextLine();
                     organizador.cadastrar(nome, data, local, capacidade);
                     break;
-                case 2:
+                case "2":
                     System.out.println("Nome do evento: ");
                     nome = scanner.next();
                     organizador.excluir(nome);
                     break;
-                case 3:
+                case "3":
                     System.out.println("Nome do evento: ");
                     nome = scanner.next();
                     organizador.seInscrever(nome);
                     break;
-                case 4:
+                case "4":
                     System.out.println("Nome do evento: ");
                     nome = scanner.next();
                     System.out.println(organizador.buscar(nome));
                     break;
-                case 5:
+                case "5":
                     organizador.listar();
                     break;
-                case 6:
+                case "6":
                     organizador.setQuantidade(e.importarCSV(organizador.getEventos(), organizador.getQuantidade()));
                     break;
-                case 0:
+                case "0":
                     System.out.println("Encerrando o programa. Até mais!");
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (opcao != 0);
+        } while (opcao != "0");
 
         scanner.close();
     }
