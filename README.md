@@ -22,7 +22,7 @@ Este projeto é uma aplicação simples de **Gestão de Eventos** em Java, que p
 
 1. Faça o download do código-fonte ou clone o repositório.
    ```bash
-   git clone https://github.com/jjvaldezzzzz/Projeto-Gerenciador-de-Eventos.git
+   git clone https://github.com/jjvaldezzzzz/gesttor-de-eventos.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
